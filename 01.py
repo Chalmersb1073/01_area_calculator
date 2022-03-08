@@ -4,7 +4,7 @@ def num_check(question):
     valid = False
     while not valid:
 
-        error = "dont be a smartass, pick a positive number"
+        error = "just pick a number over 0, not that hard"
 
         try:
 
@@ -33,8 +33,8 @@ while keep_going == "":
     height = num_check("height: ")
     area = width * height
     perimeter = 2 * (width * height)
-    print("perimeter: {} units" .format(perimeter))
-    print("area: {} square units" .format(area))
+    print("perimeter: {:.2f} units" .format(perimeter))
+    print("area: {:.2f} square units" .format(area))
 
     keep_going = input ("press enter to restart or any key to exit")
 print()
